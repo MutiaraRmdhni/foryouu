@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>I Love You Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+        }
+
+        .message {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        
+    #copyrightNotice {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="messageContainer"></div>
+
+    <script>
+        const messageContainer = document.getElementById("messageContainer");
+        const messageText = "I love you I love you";
+        const numMessages = window.innerHeight / 1; // Adjust this value to change the number of messages
+
+        for (let i = 0; i < numMessages; i++) {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message";
+            messageDiv.textContent = messageText;
+            messageContainer.appendChild(messageDiv);
+        }
+    </script>
+    <div id="copyrightNotice">
+      <p>© 2023 Nny Varelly. All rights reserved.</p>
+  </div>
+</body>
+</html>
